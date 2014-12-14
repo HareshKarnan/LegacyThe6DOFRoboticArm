@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0740)http://cdn.sharedaddomain.com/ancbanner_general_728x90_264.htm?cat=234&clientId=6bfa047a-bad8-4d19-829a-40f859c68ad8&l=http%3A%2F%2Fwww.nex-robotics.com%2Findex.php%3Foption%3Dcom_virtuemart%26page%3Dshop.product_details%26flypage%3Dflypage.tpl%26category_id%3D13%26product_id%3D859%26Itemid%3D45&r=http%3A%2F%2Fwww.nex-robotics.com%2Findex.php%3Fsearchword%3Dhigh%2Btorque%2Bmotor%26ordering%3D%26searchphrase%3Dall%26option%3Dcom_search&kw=online%20store%2C%20robotics%2C%20embedded%20systems%2C%20robot%20kits%2C%20components%2C%20motor%20drivers%2C%20omni%20wheels%2C%20microcontroller%20boards%2C%20sensors%2C%20Quadrotor%20BLDC%20motors%2C%20batteries%20and%20chargers%2C%20embedded%20systems%20development%20tools%2C%20Robotic%20arms -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <style type="text/css">
+        html, body {margin: 0; border: 0; padding: 0;}
+    </style>
+    <script type="text/javascript" async="" src="a_usersync"></script><script type="text/javascript">
+        (function () {
+            var W = window, D = document, qs;
+
+            function decodeQP(p) { return decodeURIComponent(p.replace(/\+/g, ' ')); }
+            function encodeQP(p) { return encodeURIComponent(p); }
+
+            function getQP(k) {
+                if (!qs) {
+                    qs = {};
+                    var kvs = W.location.search.substr(1).split('&');
+                    for (var i = 0; i < kvs.length; i++) {
+                        var p = kvs[i].split('=');
+                        qs[decodeQP(p[0])] = decodeQP(p.length == 2 ? p[1] : p[0]);
+                    }
+                }
+                return qs[k];
+            }
+            
+            function postMsg(num) {
+                try {
+                    var loc = getQP('l');
+                    loc && W.top.postMessage(num.toString(), loc);
+                } catch (e) { }
+            }
+
+            function run(p) {
+                var url = '';
+                switch (p) {
+                    case 'ADM':
+                        admatter_account = '50296486-753f-419a-b8f3-ed9745d6ab1e';
+                        admatter_uid = '';
+                        admatter_adtype = 'banner';
+                        admatter_slot = 83;
+                        admatter_width = 728;
+                        admatter_height = 90;
+                        admatter_keyword = getQP('kw');
+                        url = '//serviceama-a.akamaihd.net/js/showads_p.js';
+
+                        W.sendMsg = function (id) {
+                            postMsg(id == 1 ? 0 : 1);
+                            try {
+                                delete W.sendMsg;
+                            } catch (e) { }
+                        };
+
+                        break;
+                    case 'OXOS':
+                        m3_r = Math.floor(Math.random() * 99999999999);
+                        m3_u = 'http://openx.jeetyetmedia.com/www/delivery/ajs.php?zoneid=990&amp;cb=' + m3_r;
+                        m3_u += '&amp;category=' + encodeQP(getQP('cat'));
+                        m3_u += '&amp;loc=' + encodeQP(D.location.href);
+                        if (D.referrer) m3_u += '&amp;referer=' + encodeQP(D.referrer);
+                        if (D.context) m3_u += '&amp;context=' + encodeQP(D.context);
+                        if (D.charset || D.characterSet) m3_u += '&amp;charset=' + encodeQP(D.charset || D.characterSet);
+                        if (!D.MAX_used) D.MAX_used = ',';
+                        if (D.MAX_used != ',') m3_u += '&amp;exclude=' + D.MAX_used;
+                        if (D.mmm_fo) m3_u += '&amp;mmm_fo=1';
+                        url = m3_u;
+                        
+                        W.onload = function () {
+                            postMsg(Math.max(D.body.children.length - 2, 0));
+                        };
+
+                        break;
+                }
+                if (!!url) {
+                    D.write('<scr' + 'ipt type="text/javascript" src="' + url + '">');
+                    D.write('<\/scr' + 'ipt>');
+                }
+            }
+
+            W.run = function (p) {
+                run(p);
+                try {
+                    delete W.run;
+                } catch (e) { }
+            };
+        })()
+    </script>
+<script type="text/javascript" src="gsrs"></script></head>
+<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+    <!-- ID: 264 | GeoID: 1 | GroupID: 21 | ProductID: 14 | Template: BottomBar -->
+    <script type="text/javascript">
+(function () {
+    var providers = [
+        {
+            l: 'ADM',
+            p: 100
+        },
+        {
+            l: 'OXOS',
+            p: 0
+        }
+    ];
+
+    var r = Math.random() * 100;
+    for (var i = 0; i < providers.length; i++) {
+        var p = providers[i];
+        r -= p.p;
+        if (r < 0) return run(p.l);
+    }
+})()
+    </script><script type="text/javascript" src="showads_p.js"></script><script type="text/javascript" src="creative.jsonp"></script><script type="text/javascript">
+   var script = '<scr' + 'ipt src="http://ib.adnxs.com/ttj?id=2554299&size=728x90&currentlocation=' 
++ admatter_pageUrl + '" TYPE="text/javascript"></scr' + 'ipt>';
+   document.write(script);
+</script><script src="ttj" type="text/javascript"></script><script src="ttj(1)"></script><!-- BEGIN IFRAME TAG - Sizeless - RON NoBL AQ - CPM 4 < - DO NOT MODIFY -->
+<iframe src="tt.htm" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="728" height="90"></iframe>
+<!-- END TAG --><script src="ANX_async_usersync.js"></script>
+<script type="text/javascript" src="i"></script>
+
+</body></html>

@@ -1,0 +1,24 @@
+
+<!-- saved from url=(0216)https://stackauth.com/auth/global/read?request=7cZZQ%2FH2QQ%2BJCUJUguyppWIRgfrbtRGAq2NlDJ4jM%2BLST5NKx%2FOFxmbU9D%2F%2F%2FS%2BKGAEgIdhaALZsvHLVm%2BgBuPuP56CbYYWBPi8%2BVZCcS%2FA%3D&nonce=9bF9UwAAAAAJT%2BNpbmScQw%3D%3D -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                  <script>
+                  var data = {"ReadSession":"https://stackauth.com/auth/global/read-session","Request":"7cZZQ/H2QQ+JCUJUguyppWIRgfrbtRGAq2NlDJ4jM+LST5NKx/OFxmbU9D///S+KGAEgIdhaALZsvHLVm+gBuPuP56CbYYWBPi8+VZCcS/A=","Nonce":"9bF9UwAAAAAJT+NpbmScQw==","Referrer":"http://robotics.stackexchange.com/questions/521/computing-the-jacobian-matrix-for-inverse-kinematics","StorageName":"GlobalLogin"};
+
+                  var toMsg = window.parent;
+
+                  var obj = localStorage.getItem(data.StorageName);
+                  if(obj != null) {
+                  var req = new XMLHttpRequest();
+                  req.open('POST', data.ReadSession+'?request='+encodeURIComponent(data.Request)+'&nonce='+encodeURIComponent(data.Nonce)+'&seriesAndToken='+encodeURIComponent(obj), false);
+                  req.send(null);
+                  
+                    if(req.status == 200){
+                      toMsg.postMessage(req.responseText, data.Referrer);
+                    }else{
+                      toMsg.postMessage('No Session', data.Referrer);
+                    }
+                  }else{
+                    toMsg.postMessage('No Local Storage', data.Referrer);
+                  }
+                  </script>
+                  </head><body></body></html>
